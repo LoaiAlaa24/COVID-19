@@ -43,7 +43,7 @@ class ICU extends Component {
                 fullWidth
                 size="large"
               >
-                <Typography variant="h5" align="right">
+                <Typography variant="h5" align="center">
                   {" "}
                   طلب مساعدات
                 </Typography>
@@ -60,7 +60,7 @@ class ICU extends Component {
                 fullWidth
                 size="large"
               >
-                <Typography variant="h5" align="right">
+                <Typography variant="h5" align="center">
                   مراجعة اعداد سابقة
                 </Typography>
               </Button>

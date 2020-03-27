@@ -38,7 +38,7 @@ class HelpRequest extends Component {
             <Grid item xs={12} align="center">
             <Grid item xs={4} align="center">
               <Button style={{backgroundColor:"#009CE2"}} variant="contained" color="secondary" fullWidth size="large">
-              <Typography variant="h5" align="right"> ادخال اعداد جديدة</Typography>
+              <Typography variant="h5" align="center"> ادخال اعداد جديدة</Typography>
               </Button>
               </Grid>
             </Grid>
@@ -46,7 +46,7 @@ class HelpRequest extends Component {
             <Grid item xs={12} align="center">
             <Grid item xs={4} align="center">
               <Button style={{backgroundColor:"#009CE2"}} variant="contained" color="secondary" fullWidth size="large">
-              <Typography variant="h5" align="right">مراجعة اعداد سابقة</Typography>
+              <Typography variant="h5" align="center">مراجعة اعداد سابقة</Typography>
               </Button>
               </Grid>
             </Grid>
