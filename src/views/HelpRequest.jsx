@@ -9,12 +9,16 @@ import ModalConfirm from "../components/HelpRequest/ModalConfirm";
 
 const styles = theme => ({
   mainContainer: {
-    margin: theme.spacing(10),
+    margin: theme.spacing(5),
     flexGrow: 1,
     justifyContent:"center",
     alignItems:"center"
     // border: '1px solid black',
   },
+ container:{
+
+
+  }
 
   
 });
@@ -76,13 +80,15 @@ class HelpRequest extends Component {
     return (
         <div className={classes.mainContainer}>
       
-        <Container style={{alignItems:"center",justifyContent:"center"}}>
-        <Grid item xs={12} md={6}>
+        <Grid container xs={12} md={6} justify="center">
+       
+             <Grid container item xs={12} md={6}>
            
-        <ModalConfirm  openModal={true} />
+                  <ModalConfirm  openModal={true} />
+
            </Grid>
 
-           </Container>
+           </Grid>
 
           <Grid container spacing={3}>
             <Grid item xs={12}>
