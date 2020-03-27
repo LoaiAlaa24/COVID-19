@@ -24,6 +24,9 @@ class Info extends Component {
           item
           spacing={2}
           xs={12}
+          direction="row-reverse"
+          justify="flex-start"
+          alignItems="center"
           className={classes.mainContainer}
         >
           <Grid item xs={12}>
@@ -31,7 +34,7 @@ class Info extends Component {
              طلب مساعدات
             </Typography>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
                 نوع ( اقنعة / ادوية ) 
@@ -47,7 +50,7 @@ class Info extends Component {
               />
             </Grid>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
                عدد مطلوب
@@ -63,7 +66,7 @@ class Info extends Component {
               />
             </Grid>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
                عدد متاح حاليا
@@ -79,7 +82,7 @@ class Info extends Component {
               />
             </Grid>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
           ضرورة
