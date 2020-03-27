@@ -19,6 +19,7 @@ class Info extends Component {
     const { classes } = this.props;
     return (
       <Paper>
+
         <Grid
           container
           item
