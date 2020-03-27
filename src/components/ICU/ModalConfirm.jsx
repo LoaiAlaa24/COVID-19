@@ -9,17 +9,16 @@ import { Typography, Grid, Paper, TextField, Button } from "@material-ui/core";
 import { Modal } from '@material-ui/core';
 
 const styles = theme => ({
-    mainContainer: {
-      margin: "auto",
-      textAlign: "right"
-    } ,
-   modalContainer: {
-        margin: theme.spacing(5),
-        flexGrow: 1,
-        backgroundColor:"white",
-        height:"80%",
-        padding:30,
-        width:"50%"
+  mainContainer: {
+    margin: "auto",
+    textAlign: "right"
+  } , modalContainer: {
+    margin: theme.spacing(5),
+    flexGrow: 1,
+    backgroundColor:"white",
+    height:"80%",
+    padding:30,
+    width:"50%"
     // border: '1px solid black',
   }
 });
@@ -54,8 +53,8 @@ class ModalConfirm extends Component {
           
           
            <Button onClick={ (this.props.closeModal) }  style={{marginTop:0,backgroundColor:"transparent",borderColor:"transparent",float:"right"}} >
-             <img src='https://d30y9cdsu7xlg0.cloudfront.net/png/53504-200.png' style={{width:20}} />
-        </Button>
+ <img src='https://d30y9cdsu7xlg0.cloudfront.net/png/53504-200.png' style={{width:20}} />
+ </Button>
 
              <Typography style={{color:"#6B6667"}}  variant="h4" align="center">
                {" "}
@@ -80,7 +79,7 @@ class ModalConfirm extends Component {
            <Grid item xs={6} >
         <Typography style={{color:"#6B6667"}}  variant="h4" align="right">
                {" "}
-               نوع ( اقنعة / ادوية ) 
+               عدد المرضى في الوحدة
              </Typography>
    
 
@@ -100,11 +99,10 @@ class ModalConfirm extends Component {
 </Grid>
 
 <Grid item xs={6} >
-  
-    <Typography style={{color:"#6B6667"}}  variant="h4" align="right">
-    {" "}
-    عدد مطلوب
-    </Typography>
+<Typography style={{color:"#6B6667"}}  variant="h4" align="right">
+{" "}
+    عدد الغرف المشغولة 
+</Typography>
 
 
 </Grid>
@@ -125,7 +123,7 @@ class ModalConfirm extends Component {
        <Grid item xs={6} >
        <Typography style={{color:"#6B6667"}}  variant="h4" align="right">
        {" "}
-       عدد متاح حاليا
+           عدد الغرف المتاحة 
        </Typography>
 
 
@@ -145,7 +143,7 @@ class ModalConfirm extends Component {
        <Grid item xs={6} >
        <Typography style={{color:"#6B6667"}}  variant="h4" align="right">
        {" "}
-       ضرورة
+           عدد اجهزة التنفس الصناعي المتاحة
        </Typography>
 
 

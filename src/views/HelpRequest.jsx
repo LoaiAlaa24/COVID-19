@@ -15,10 +15,6 @@ const styles = theme => ({
     alignItems:"center"
     // border: '1px solid black',
   },
- container:{
-
-
-  }
 
   
 });

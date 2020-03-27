@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import { Typography, Grid, Button } from "@material-ui/core";
 import Info from "../components/ICU/Info";
-
+import ModalConfirm from "../components/ICU/ModalConfirm";
 
 const styles = theme => ({
   mainContainer: {
@@ -15,14 +15,40 @@ const styles = theme => ({
 });
 
 class ICU extends Component {
-  state = {};
-  handleChangeSwitch = name => event => {
-    this.setState({ ...this.state, [name]: event.target.checked });
+  state = {
+    openModal:false
   };
+
+
+  handleChangeSwitch = name => event => {
+    this.setState({ 
+      openModal: true});
+  };
+
+
+  closeModal= name => event =>{
+        this.setState({ 
+          openModal:false
+        });
+
+
+  }
+
   render() {
     const { classes } = this.props;
     return (
       <div className={classes.mainContainer}>
+
+<Grid container xs={12} md={6} justify="center">
+       
+       <Grid item xs={12} md={6}>
+     
+           <ModalConfirm  openModal={this.state.openModal} closeModal={this.closeModal()} />
+
+      </Grid>
+
+     </Grid>
+
         <Grid container spacing={3}>
           <Grid item xs={12}>
             <Typography style={{ color: "#6B6667" }} variant="h4" align="right">
@@ -31,7 +57,7 @@ class ICU extends Component {
             </Typography>
           </Grid>
           <Grid item xs={12}>
-            <Info />
+          <Info  handleChangeSwitch={this.handleChangeSwitch()} />
           </Grid>
 
           <Grid item xs={12} align="center">
