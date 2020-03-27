@@ -24,6 +24,9 @@ class HospitalInfo extends Component {
           item
           spacing={2}
           xs={12}
+          direction="row-reverse"
+          justify="flex-start"
+          alignItems="center"
           className={classes.mainContainer}
         >
           <Grid item xs={12}>
@@ -31,7 +34,7 @@ class HospitalInfo extends Component {
               معلومات عن المستشفى
             </Typography>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography variant="h6" align="right">
                 الاسم
@@ -48,7 +51,7 @@ class HospitalInfo extends Component {
               />
             </Grid>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography variant="h6" align="right">
                 البريد الإلكتروني للمستشفى
@@ -65,7 +68,7 @@ class HospitalInfo extends Component {
               />
             </Grid>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography variant="h6" align="right">
                 الرقم الأرضي
@@ -83,7 +86,7 @@ class HospitalInfo extends Component {
             </Grid>
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography variant="h6" align="right">
                 المحافظة
@@ -99,7 +102,7 @@ class HospitalInfo extends Component {
               />
             </Grid>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography variant="h6" align="right">
                 المدينة
@@ -116,7 +119,7 @@ class HospitalInfo extends Component {
             </Grid>
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography variant="h6" align="right">
                 الحى
@@ -133,7 +136,7 @@ class HospitalInfo extends Component {
             </Grid>
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography variant="h6" align="right">
                 العنوان

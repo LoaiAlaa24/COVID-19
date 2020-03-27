@@ -24,6 +24,9 @@ class PersonlInfo extends Component {
           item
           spacing={2}
           xs={12}
+          direction="row-reverse"
+          justify="flex-start"
+          alignItems="center"
           className={classes.mainContainer}
         >
           <Grid item xs={12}>
@@ -31,7 +34,7 @@ class PersonlInfo extends Component {
               معلومات شخصيه
             </Typography>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography variant="h6" align="right">
                 البريد الإلكترون
@@ -40,6 +43,7 @@ class PersonlInfo extends Component {
             <Grid item xs={12}>
               <TextField
                 id="outlined-password-input"
+                value=""
                 autoComplete="current-password"
                 variant="outlined"
                 type="string"
@@ -47,8 +51,8 @@ class PersonlInfo extends Component {
               />
             </Grid>
           </Grid>
-          <Grid item xs={12}>
-            <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
+            <Grid item xs={12} >
               <Typography variant="h6" align="right">
               كلمة السر
               </Typography>
@@ -56,14 +60,14 @@ class PersonlInfo extends Component {
             <Grid item xs={12}>
               <TextField
                 id="outlined-password-input"
-                type="password"
+                value=""
                 autoComplete="current-password"
                 variant="outlined"
                 fullWidth
               />
             </Grid>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography variant="h6" align="right">
                 أعاده كلمة السر
@@ -72,6 +76,7 @@ class PersonlInfo extends Component {
             <Grid item xs={12}>
               <TextField
                 id="outlined-password-input"
+                value=""
                 type="password"
                 autoComplete="current-password"
                 variant="outlined"
