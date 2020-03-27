@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import { Typography, Grid ,Button} from "@material-ui/core";
 import PersonalInfo from "../components/HospitalLogin/PersonalInfo";
-import HospitalInfo from "../components/HospitalLogin/HospitalInfo";
+
 const styles = theme => ({
   mainContainer: {
     margin: theme.spacing(10),
