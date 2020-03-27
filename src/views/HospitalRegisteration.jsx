@@ -35,7 +35,7 @@ class HospitalRegisteration extends Component {
           </Grid>
           <Grid item xs={12} align="center">
           <Grid item xs={4} align="center">
-            <Button variant="contained" color="secondary" fullWidth size="large">
+            <Button style={{backgroundColor:"#E20100"}} variant="contained" color="secondary" fullWidth size="large">
             <Typography variant="h5" align="right"> إنشاء</Typography>
             </Button>
             </Grid>
