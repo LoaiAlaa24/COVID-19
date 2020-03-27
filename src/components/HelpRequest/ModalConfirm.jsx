@@ -44,15 +44,17 @@ class ModalConfirm extends Component {
                aria-describedby="server-modal-description" >
 
 
+<Grid container xs={4} md={12} justify="center" >
+<Grid item xs={12} md={12} >
                                            
    <div className={classes.modalContainer}>
        <Grid container spacing={3}>
            <Grid item xs={12} >
           
           
-           <button style={{marginTop:0,backgroundColor:"transparent",borderColor:"transparent",float:"right"}} onClick={this.onClickClose}>
+           <Button onClick={ (this.props.closeModal) }  style={{marginTop:0,backgroundColor:"transparent",borderColor:"transparent",float:"right"}} >
  <img src='https://d30y9cdsu7xlg0.cloudfront.net/png/53504-200.png' style={{width:20}} />
- </button>
+ </Button>
 
              <Typography style={{color:"#6B6667"}}  variant="h4" align="center">
                {" "}
@@ -175,9 +177,11 @@ class ModalConfirm extends Component {
 </Grid>
 
            </Grid>
-
            
+        
                                </div>
+                               </Grid>
+                               </Grid>
                        </Modal>
 
               

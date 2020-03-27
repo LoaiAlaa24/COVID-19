@@ -24,56 +24,24 @@ const styles = theme => ({
 });
 
 class HelpRequest extends Component {
-  state = {};
-  handleChangeSwitch = name => event => {
-    this.setState({ ...this.state, [name]: event.target.checked });
+  state = {
+    openModal:false
   };
 
-  getOption = () => ({
-    title: {
-      text: "JS Front End Frameworks",
-      x: "center"
-    },
-    tooltip: {
-      trigger: "item",
-      formatter: "{a} <br/>{b} : {c} ({d}%)"
-    },
-    legend: {
-      orient: "vertical",
-      left: "left",
-      data: ["React", "Angular", "Vue"]
-    },
-    series: [
-      {
-        name: "JS FrontEnd",
-        type: "pie",
-        radius: "55%",
-        center: ["50%", "60%"],
-        data: [
-          {
-            value: 50,
-            name: "React"
-          },
-          {
-            value: 22,
-            name: "Angular"
-          },
-          {
-            value: 28,
-            name: "Vue"
-          }
-        ],
-        itemStyle: {
-          emphasis: {
-            shadowBlur: 10,
-            shadowOffsetX: 0,
-            shadowColor: "rgba(0, 0, 0, 0.5)"
-          }
-        }
-      }
-    ]
-  });
 
+  handleChangeSwitch = name => event => {
+    this.setState({ 
+      openModal: true});
+  };
+
+
+  closeModal= name => event =>{
+        this.setState({ 
+          openModal:false
+        });
+
+
+  }
 
   render() {
     const { classes } = this.props;
@@ -82,11 +50,11 @@ class HelpRequest extends Component {
       
         <Grid container xs={12} md={6} justify="center">
        
-             <Grid container item xs={12} md={6}>
+             <Grid item xs={12} md={6}>
            
-                  <ModalConfirm  openModal={true} />
+                 <ModalConfirm  openModal={this.state.openModal} closeModal={this.closeModal()} />
 
-           </Grid>
+            </Grid>
 
            </Grid>
 
@@ -97,8 +65,9 @@ class HelpRequest extends Component {
                         المستشفى الجوي
               </Typography>
             </Grid>
+
             <Grid item xs={12}>
-              <Info />
+              <Info  handleChangeSwitch={this.handleChangeSwitch()} />
             </Grid>
 
             <Grid item xs={12} align="center">
@@ -116,6 +85,8 @@ class HelpRequest extends Component {
               </Button>
               </Grid>
             </Grid>
+
+
           </Grid>
           
         </div>
