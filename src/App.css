@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+
+@font-face {
+  font-family: 'Cairo';
+  src: local('Cairo'), url(./Fonts/Cairo/Cairo-Light.ttf) format('truetype');
+  overflow:hidden;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

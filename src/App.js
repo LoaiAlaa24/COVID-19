@@ -9,10 +9,20 @@ import HelpRequest from './views/HelpRequest';
 import ICU from './views/ICU';
 import ControlRoom from './views/ControlRoom';
 import ReviseEq from './views/ReviseEq';
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: 'Cairo',
+  }
+});
+
 
 const hist = createBrowserHistory();
 function App() {
   return (
+    <MuiThemeProvider theme={theme}>
     <Router history={hist}>
       <Switch>
         <Route path="/home" component={Home} />
@@ -25,6 +35,7 @@ function App() {
         {/* add routes here */}
       </Switch>
     </Router>
+    </MuiThemeProvider>
   );
 }
 
