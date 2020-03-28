@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
-import { Typography, Grid} from "@material-ui/core";
-import PressuredHospital from "../components/ControlRoom/PressuredHospital";
-import MostRequirementHospital from "../components/ControlRoom/MostRequirementHospital";
+import { Typography, Grid, Button } from "@material-ui/core";
+import CurrentPressure from "../components/HospitalDashboard/CurrentPressure";
+import Requirements from "../components/HospitalDashboard/Requirements";
 import PatientsGraph from "../components/ControlRoom/PatientsGraph";
 import AvailableBedsGraph from "../components/ControlRoom/AvailableBedsGraph";
-import DenseTable from "../components/ControlRoom/DenseTable";
-import RequirementTable from "../components/ControlRoom/RequirementTable";
+import StatusTable from "../components/HospitalDashboard/StatusTable";
+import RequirementTable from "../components/HospitalDashboard/RequirementTable";
+import PhoneIcon from "../assets/icons/Phone.png";
+import Updates from "../components/HospitalDashboard/Updates";
 
 const styles = theme => ({
   mainContainer: {
@@ -25,7 +27,14 @@ const options = {
   month: "long",
   day: "numeric"
 };
-class ControlRoom extends Component {
+const timeOption = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour:"numeric"
+  };
+class HospitalDashboard extends Component {
   state = {
     date: new Date(Date.now()).toLocaleDateString("ar-EG", options)
   };
@@ -51,18 +60,48 @@ class ControlRoom extends Component {
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Grid item xs={12}>
-              <Typography variant="h5" align="right">
-                {this.state.date}
-              </Typography>
-            </Grid>
+            <Typography variant="h5" align="right">
+              {this.state.date}
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={2}>
+            <Typography variant="h4" align="right">
+              {" "}
+              حميات العجمى
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={2}
+            direction="row-reverse"
+            justify="flex-start"
+            alignItems="flex-start"
+            container
+          >
+            <Button
+              style={{ backgroundColor: "#E20100" }}
+              variant="contained"
+              color="secondary"
+              size="large"
+            >
+              <img src={PhoneIcon} style={{ width: 20 }} />
+            </Button>
+          </Grid>
+          <Grid item xs={12} md={8}>
+            <Typography variant="h5" align="right">
+              {"اخر تعديل: "+new Date(Date.now()).toLocaleDateString("ar-EG", timeOption)}
+            </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
             <Grid item xs={12}>
-              <PressuredHospital />
+              <CurrentPressure />
             </Grid>
             <Grid item xs={12} className={classes.topMargin}>
-              <MostRequirementHospital />
+              <Requirements />
+            </Grid>
+            <Grid item xs={12} className={classes.topMargin}>
+              <Updates />
             </Grid>
           </Grid>
           <Grid item xs={12} md={4}>
@@ -79,8 +118,8 @@ class ControlRoom extends Component {
               </Typography>
             </Grid>
 
-            <Grid item xs={12} className={classes.topMargin}>
-              <DenseTable />
+            <Grid item xs={12}>
+              <StatusTable />
             </Grid>
           </Grid>
           <Grid item xs={12}>
@@ -90,7 +129,7 @@ class ControlRoom extends Component {
                 جدول الطلبات
               </Typography>
             </Grid>
-            <Grid item xs={12} className={classes.topMargin}>
+            <Grid item xs={12}>
               <RequirementTable />
             </Grid>
           </Grid>
@@ -111,4 +150,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(withStyles(styles)(withRouter(ControlRoom)));
+)(withStyles(styles)(withRouter(HospitalDashboard)));

@@ -10,6 +10,7 @@ import ICU from './views/ICU';
 import ControlRoom from './views/ControlRoom';
 import ReviseEq from './views/ReviseEq';
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import HospitalDashboard from './views/HospitalDashboard';
 
 
 const theme = createMuiTheme({
@@ -32,6 +33,7 @@ function App() {
         <Route path="/ICU" component={ICU} />
         <Route path="/controlRoom" component={ControlRoom} />
         <Route path="/ReviseEq" component={ReviseEq} />
+        <Route path="/hospitalDashboard" component={HospitalDashboard} />
         {/* add routes here */}
       </Switch>
     </Router>
