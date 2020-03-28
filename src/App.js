@@ -27,7 +27,7 @@ function App() {
     <MuiThemeProvider theme={theme}>
     <Router history={hist}>
       <Switch>
-       <Route exact path="/" component={HospitalLogin}/>
+       <Route path="/" component={HospitalLogin}/>
         <Route path="/home" component={Home} />
         <Route path="/hospitalRegisteration" component={HospitalRegisteration} />
         <Route path="/login" component={HospitalLogin} />
