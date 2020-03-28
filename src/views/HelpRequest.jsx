@@ -17,6 +17,7 @@ const styles = theme => ({
 
 class HelpRequest extends Component {
   state = {};
+
   handleChangeSwitch = name => event => {
     this.setState({ ...this.state, [name]: event.target.checked });
   };
