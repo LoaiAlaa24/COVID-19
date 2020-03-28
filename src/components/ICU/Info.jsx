@@ -116,7 +116,7 @@ class Info extends Component {
           </Grid>
           <Grid item xs={12} align="center">
             <Grid item xs={4} align="center">
-              <Button style={{backgroundColor:"#E20100"}} variant="contained" color="secondary" fullWidth size="large">
+              <Button  onClick={ this.props.handleChangeSwitch }  style={{backgroundColor:"#E20100"}} variant="contained" color="secondary" fullWidth size="large">
               <Typography variant="h5" align="right"> اكمل</Typography>
               </Button>
               </Grid>
