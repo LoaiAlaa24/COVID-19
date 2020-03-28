@@ -10,6 +10,7 @@ import HelpRequest from './views/HelpRequest';
 import ICU from './views/ICU';
 import ControlRoom from './views/ControlRoom';
 import ReviseEq from './views/ReviseEq';
+import TestTable from './views/TestTable';
 
 const hist = createBrowserHistory();
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/ICU" component={ICU} />
         <Route path="/controlRoom" component={ControlRoom} />
         <Route path="/ReviseEq" component={ReviseEq} />
+        <Route path="/TestTable" component={TestTable} />
         {/* add routes here */}
       </Switch>
     </Router>
