@@ -5,8 +5,8 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
-import { PRIMARY } from "./config/config";
+// import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
+// import { PRIMARY } from "./config/config";
 import rootReducer from "./store/reducers/rootReducer";
 const store = createStore(rootReducer);
 

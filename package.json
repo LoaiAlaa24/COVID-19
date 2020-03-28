@@ -10,10 +10,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-<<<<<<< HEAD
     "echarts": "^4.7.0",
-=======
->>>>>>> 452618d01dbb7652f0af387cbe5429c48df4e0d8
     "echarts-for-react": "^2.0.15-beta.1",
     "history": "^4.10.1",
     "react": "^16.13.1",

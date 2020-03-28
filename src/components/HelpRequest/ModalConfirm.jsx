@@ -5,7 +5,7 @@ import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
-import { Typography, Grid, Paper, TextField, Button } from "@material-ui/core";
+import { Typography, Grid, Paper,Button } from "@material-ui/core";
 import { Modal } from '@material-ui/core';
 
 const styles = theme => ({

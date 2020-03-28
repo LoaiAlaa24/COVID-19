@@ -2,19 +2,20 @@ import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
-import { Typography, Grid, Button } from "@material-ui/core";
+import { Typography, Grid} from "@material-ui/core";
 import PressuredHospital from "../components/ControlRoom/PressuredHospital";
 import MostRequirementHospital from "../components/ControlRoom/MostRequirementHospital";
 import PatientsGraph from "../components/ControlRoom/PatientsGraph";
 import AvailableBedsGraph from "../components/ControlRoom/AvailableBedsGraph";
+import DenseTable from "../components/ControlRoom/DenseTable";
 
 const styles = theme => ({
   mainContainer: {
     margin: theme.spacing(5),
     flexGrow: 1
   },
-  topMargin:{
-      marginTop:"12px"
+  topMargin: {
+    marginTop: "12px"
   }
 });
 const options = {
@@ -40,7 +41,7 @@ class HospitalRegisteration extends Component {
           spacing={3}
           direction="row-reverse"
           justify="flex-start"
-           alignItems="flex-start"
+          alignItems="flex-start"
         >
           <Grid item xs={12} md={8}>
             <Typography variant="h4" align="right">
@@ -55,7 +56,7 @@ class HospitalRegisteration extends Component {
               </Typography>
             </Grid>
           </Grid>
-          <Grid item xs={12} md={4} >
+          <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <PressuredHospital />
             </Grid>
@@ -64,10 +65,33 @@ class HospitalRegisteration extends Component {
             </Grid>
           </Grid>
           <Grid item xs={12} md={4}>
-              <PatientsGraph/>
+            <PatientsGraph />
           </Grid>
           <Grid item xs={12} md={4}>
-              <AvailableBedsGraph/>
+            <AvailableBedsGraph />
+          </Grid>
+          <Grid item xs={12}>
+            <Grid item xs={12}>
+              <Typography variant="h5" align="right">
+                {" "}
+                جدول الاعداد
+              </Typography>
+            </Grid>
+
+            <Grid item xs={12}>
+              <DenseTable />
+            </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Grid item xs={12}>
+              <Typography variant="h5" align="right">
+                {" "}
+                جدول الطلبات
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <DenseTable />
+            </Grid>
           </Grid>
         </Grid>
       </div>

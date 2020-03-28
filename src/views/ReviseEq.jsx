@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
-import { Typography, Grid ,Button,Container} from "@material-ui/core";
-import Info from "../components/HelpRequest/Info";
+import { Typography, Grid } from "@material-ui/core";
 import Quantity from "../components/ReviseEq/Quantity";
 
 

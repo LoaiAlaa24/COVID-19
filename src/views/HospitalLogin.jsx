@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
-import { Typography, Grid ,Button} from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import PersonalInfo from "../components/HospitalLogin/PersonalInfo";
 
 const styles = theme => ({
