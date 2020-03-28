@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
+import { withRouter,Link } from "react-router-dom";
 import { Typography, Grid, Paper, TextField, Button } from "@material-ui/core";
 
 const styles = theme => ({
@@ -11,10 +11,27 @@ const styles = theme => ({
   }
 });
 class PersonlInfo extends Component {
-  state = {};
+  state = {emailFieldValue:"",path:"/navigate"};
   handleChangeSwitch = name => event => {
     this.setState({ ...this.state, [name]: event.target.checked });
   };
+  _handleTextFieldChange= name => event => {
+    console.log(event.target.value)
+    var path=""
+    if(event.target.value =="health@ministry.eg"){
+      path = "/controlroom"
+    }else{
+      path = "/navigate"
+    }
+
+
+    this.setState({
+        emailFieldValue: event.target.value,
+        path:path
+    });
+    
+}
+
   render() {
     const { classes } = this.props;
     return (
@@ -44,6 +61,8 @@ class PersonlInfo extends Component {
                 variant="outlined"
                 type="string"
                 fullWidth
+                value={this.state.emailFieldValue}
+                onChange={this._handleTextFieldChange()}
               />
             </Grid>
           </Grid>
@@ -67,7 +86,12 @@ class PersonlInfo extends Component {
           <Grid item xs={12} align="center">
             <Grid item xs={4} align="center">
               <Button style={{backgroundColor:"#E20100"}} variant="contained" color="secondary" fullWidth size="large">
-              <Typography variant="h5" align="right"> دخول</Typography>
+              <Typography variant="h5" align="right"> 
+              
+              <Link to={this.state.path}  style={{ textDecoration: 'none',color:"white" }}>  دخول</Link> 
+            
+
+         </Typography>
               </Button>
               </Grid>
             </Grid>

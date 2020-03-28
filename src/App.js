@@ -11,6 +11,7 @@ import ControlRoom from './views/ControlRoom';
 import ReviseEq from './views/ReviseEq';
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import HospitalDashboard from './views/HospitalDashboard';
+import Navigation from './views/Navigation';
 
 
 const theme = createMuiTheme({
@@ -26,6 +27,7 @@ function App() {
     <MuiThemeProvider theme={theme}>
     <Router history={hist}>
       <Switch>
+       <Route exact path="/" component={HospitalLogin}/>
         <Route path="/home" component={Home} />
         <Route path="/hospitalRegisteration" component={HospitalRegisteration} />
         <Route path="/login" component={HospitalLogin} />
@@ -34,6 +36,7 @@ function App() {
         <Route path="/controlRoom" component={ControlRoom} />
         <Route path="/ReviseEq" component={ReviseEq} />
         <Route path="/hospitalDashboard" component={HospitalDashboard} />
+        <Route path="/navigate" component={Navigation} />
         {/* add routes here */}
       </Switch>
     </Router>
