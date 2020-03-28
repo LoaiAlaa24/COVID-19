@@ -8,7 +8,7 @@ import ModalConfirm from "../components/ICU/ModalConfirm";
 
 const styles = theme => ({
   mainContainer: {
-    margin: theme.spacing(10),
+    margin: theme.spacing(5),
     flexGrow: 1
     // border: '1px solid black',
   }
@@ -16,38 +16,33 @@ const styles = theme => ({
 
 class ICU extends Component {
   state = {
-    openModal:false
+    openModal: false
   };
-
 
   handleChangeSwitch = name => event => {
-    this.setState({ 
-      openModal: true});
+    this.setState({
+      openModal: true
+    });
   };
 
-
-  closeModal= name => event =>{
-        this.setState({ 
-          openModal:false
-        });
-
-
-  }
+  closeModal = name => event => {
+    this.setState({
+      openModal: false
+    });
+  };
 
   render() {
     const { classes } = this.props;
     return (
       <div className={classes.mainContainer}>
-
-<Grid container xs={12} md={6} justify="center">
-       
-       <Grid item xs={12} md={6}>
-     
-           <ModalConfirm  openModal={this.state.openModal} closeModal={this.closeModal()} />
-
-      </Grid>
-
-     </Grid>
+        <Grid container item xs={12} justify="center">
+          <Grid item xs={12} md={6}>
+            <ModalConfirm
+              openModal={this.state.openModal}
+              closeModal={this.closeModal()}
+            />
+          </Grid>
+        </Grid>
 
         <Grid container spacing={3}>
           <Grid item xs={12}>
@@ -57,7 +52,7 @@ class ICU extends Component {
             </Typography>
           </Grid>
           <Grid item xs={12}>
-          <Info  handleChangeSwitch={this.handleChangeSwitch()} />
+            <Info handleChangeSwitch={this.handleChangeSwitch()} />
           </Grid>
 
           <Grid item xs={12} align="center">

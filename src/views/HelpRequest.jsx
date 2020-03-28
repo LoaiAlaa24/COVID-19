@@ -37,7 +37,7 @@ class HelpRequest extends Component {
     const { classes } = this.props;
     return (
       <div className={classes.mainContainer}>
-        <Grid container xs={12} md={6} justify="center">
+        <Grid container item xs={12} justify="center">
           <Grid item xs={12} md={6}>
             <ModalConfirm
               openModal={this.state.openModal}
