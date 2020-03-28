@@ -43,12 +43,12 @@ class MostRequirementHospital extends Component {
           </Grid>
           <Grid item xs={9}>
             <Typography variant="subtitle1" align="right">
-              حميات القاهرة{" "}
+              حميات القاهرة
             </Typography>
           </Grid>
           <Grid item xs={3}>
             <Typography variant="subtitle1" align="right">
-              ٣٠ طلب{" "}
+              ٣٠ طلب
             </Typography>
           </Grid>
         </Grid>

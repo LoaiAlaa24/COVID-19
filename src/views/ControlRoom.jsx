@@ -8,6 +8,7 @@ import MostRequirementHospital from "../components/ControlRoom/MostRequirementHo
 import PatientsGraph from "../components/ControlRoom/PatientsGraph";
 import AvailableBedsGraph from "../components/ControlRoom/AvailableBedsGraph";
 import DenseTable from "../components/ControlRoom/DenseTable";
+import RequirementTable from "../components/ControlRoom/RequirementTable";
 
 const styles = theme => ({
   mainContainer: {
@@ -90,7 +91,7 @@ class HospitalRegisteration extends Component {
               </Typography>
             </Grid>
             <Grid item xs={12}>
-              <DenseTable />
+              <RequirementTable />
             </Grid>
           </Grid>
         </Grid>

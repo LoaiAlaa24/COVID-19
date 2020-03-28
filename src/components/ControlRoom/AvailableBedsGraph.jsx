@@ -17,11 +17,8 @@ const styles = theme => ({
     color: "#fff"
   }
 });
-class MostRequirementHospital extends Component {
+class AvailableBedsGraph extends Component {
   state = {};
-  handleChangeSwitch = name => event => {
-    this.setState({ ...this.state, [name]: event.target.checked });
-  };
   render() {
     const { classes } = this.props;
     return (
@@ -65,4 +62,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(withStyles(styles)(withRouter(MostRequirementHospital)));
+)(withStyles(styles)(withRouter(AvailableBedsGraph)));

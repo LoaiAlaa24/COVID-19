@@ -26,16 +26,16 @@ const useStyles = makeStyles({
   }
 });
 
-function createData(name, area, district, noOfPatients, busyRooms,avalRooms,avalBeds,avalVen) {
-  return { name, area, district, noOfPatients, busyRooms,avalRooms,avalBeds,avalVen };
+function createData(name, area, district, noOfPatients, busyRooms,avalRooms,avalBeds,avalVen,id) {
+  return { name, area, district, noOfPatients, busyRooms,avalRooms,avalBeds,avalVen,id };
 }
 
 const rows = [
-  createData('حميات العجمي',"العجمي", "الاسكندرية", 400 , 60,30,40,10),
-  createData('حميات العجمي',"العجمي", "الاسكندرية", 400 , 60,30,40,10),
-  createData('حميات العجمي',"العجمي", "الاسكندرية", 400 , 60,30,40,10),
-  createData('حميات العجمي',"العجمي", "الاسكندرية", 400 , 60,30,40,10),
-  createData('حميات العجمي',"العجمي", "الاسكندرية", 400 , 60,30,40,10),
+  createData('حميات العجمي',"العجمي", "الاسكندرية", 400 , 60,30,40,10,1),
+  createData('حميات العجمي',"العجمي", "الاسكندرية", 400 , 60,30,40,10,2),
+  createData('حميات العجمي',"العجمي", "الاسكندرية", 400 , 60,30,40,10,3),
+  createData('حميات العجمي',"العجمي", "الاسكندرية", 400 , 60,30,40,10,4),
+  createData('حميات العجمي',"العجمي", "الاسكندرية", 400 , 60,30,40,10,5),
 ];
 
 export default function DenseTable() {
@@ -59,7 +59,7 @@ export default function DenseTable() {
 
         <TableBody>
           {rows.map(row => (
-            <TableRow key={row.name}>
+            <TableRow key={row.id}>
               <TableCell style={{width:100,fontSize:18}} align="right">{row.avalVen}</TableCell>
               <TableCell style={{width:100,fontSize:18}}  align="right">{row.avalBeds}</TableCell>
               <TableCell  style={{width:100,fontSize:18}}  align="right">{row.avalRooms}</TableCell>
