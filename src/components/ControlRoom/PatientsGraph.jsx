@@ -42,6 +42,7 @@ class MostRequirementHospital extends Component {
               align="right"
               className={classes.textColor}
             >
+              Total Numbers of Patients -
              اجمالى عدد المرضى
             </Typography>
           </Grid>

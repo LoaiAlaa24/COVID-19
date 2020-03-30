@@ -55,23 +55,23 @@ export default function RequirementTable() {
         <TableHead className={classes.headStyle}>
           <TableRow>
             <TableCell className={classes.textColor} align="right">
-              الاعداد المتاحة{" "}
+            Avaliable Quanitity الاعداد المتاحة{" "}
             </TableCell>
             <TableCell className={classes.textColor} align="right">
-              الاعداد المطلوبة{" "}
+           Requested Quantity   الاعداد المطلوبة{" "}
             </TableCell>
             <TableCell className={classes.textColor} align="right">
-              الطلب{" "}
+             Request الطلب{" "}
             </TableCell>
             <TableCell className={classes.textColor} align="right">
-              المحافظة{" "}
+            Governorate المحافظة{" "}
             </TableCell>
             <TableCell className={classes.textColor} align="right">
-              الضروره{" "}
+            Priority  الضروره{" "}
             </TableCell>
             <TableCell className={classes.textColor} align="right">
               {" "}
-              المستشفى
+            Hospital  المستشفى
             </TableCell>
           </TableRow>
         </TableHead>

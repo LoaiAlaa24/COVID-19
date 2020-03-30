@@ -50,7 +50,7 @@ class HelpRequest extends Component {
           <Grid item xs={12}>
             <Typography style={{ color: "#6B6667" }} variant="h4" align="right">
               {" "}
-              المستشفى الجوي
+          Airforces Hospital -  المستشفى الجوي
             </Typography>
           </Grid>
 

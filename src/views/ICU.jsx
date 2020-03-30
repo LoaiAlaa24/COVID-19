@@ -48,6 +48,7 @@ class ICU extends Component {
           <Grid item xs={12}>
             <Typography style={{ color: "#6B6667" }} variant="h4" align="right">
               {" "}
+              Airforces Hospital -
               المستشفى الجوي
             </Typography>
           </Grid>
@@ -82,7 +83,7 @@ class ICU extends Component {
                 size="large"
               >
                 <Typography variant="h5" align="center">
-                  مراجعة اعداد سابقة
+                   مراجعة اعداد سابقة
                 </Typography>
               </Button>
             </Grid>

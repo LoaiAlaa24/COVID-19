@@ -46,7 +46,7 @@ class Updates extends Component {
               align="right"
               className={classes.textColor}
             >
-                {"اخر تعديل ( "+ new Date(Date.now()).toLocaleDateString("ar-EG", timeOption)+" )"}
+                {" Last Update -اخر تعديل ( "+ new Date(Date.now()).toLocaleDateString("ar-EG", timeOption)+" )"}
             </Typography>
           </Grid>
           <Grid item xs={9}>

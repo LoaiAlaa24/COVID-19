@@ -39,7 +39,7 @@ class Quantity extends Component {
           <Grid item xs={9}>
             <Typography style={{ color: "#E20100" }} variant="h5" align="right">
               {" "}
-              ٢٧ مارس ٢٠٢٠ ٨:٠٠ مساءا
+          27th March 2020 8:00 PM  -   ٢٧ مارس ٢٠٢٠ ٨:٠٠ مساءا
             </Typography>
           </Grid>
 
@@ -68,6 +68,8 @@ class Quantity extends Component {
                   align="right"
                 >
                   {" "}
+
+                  Number of patients -
                   عدد المرضى في الوحدة
                 </Typography>
               </Grid>
@@ -90,6 +92,7 @@ class Quantity extends Component {
                   align="right"
                 >
                   {" "}
+                  Number of busy rooms -
                   عدد الغرف المشغولة
                 </Typography>
               </Grid>
@@ -112,6 +115,7 @@ class Quantity extends Component {
                   align="right"
                 >
                   {" "}
+                  Number of avaliable rooms - 
                   عدد الغرف المتاحة
                 </Typography>
               </Grid>
@@ -134,6 +138,7 @@ class Quantity extends Component {
                   align="right"
                 >
                   {" "}
+                  Number of ventilators -
                   عدد اجهزة التنفس الصناعي المتاحة
                 </Typography>
               </Grid>
@@ -148,6 +153,7 @@ class Quantity extends Component {
                   >
                     <Typography variant="h5" align="right">
                       {" "}
+                      Update - 
                       تعديل
                     </Typography>
                   </Button>

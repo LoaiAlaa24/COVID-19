@@ -45,13 +45,13 @@ class PersonlInfo extends Component {
         >
           <Grid item xs={12}>
             <Typography style={{color:"#6B6667"}} variant="h3" align="right">
-              تسجيل دخول
+           Login -   تسجيل دخول
             </Typography>
           </Grid>
           <Grid item xs={12}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
-                البريد الإلكتروني
+                Email - البريد الإلكتروني
               </Typography>
             </Grid>
             <Grid item xs={12}>
@@ -69,7 +69,7 @@ class PersonlInfo extends Component {
           <Grid item xs={12}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
-              كلمة السر
+            Password -  كلمة السر
               </Typography>
             </Grid>
             <Grid item xs={12}>
@@ -88,7 +88,12 @@ class PersonlInfo extends Component {
               <Button style={{backgroundColor:"#E20100"}} variant="contained" color="secondary" fullWidth size="large">
               <Typography variant="h5" align="right"> 
               
-              <Link to={this.state.path}  style={{ textDecoration: 'none',color:"white" }}>  دخول</Link> 
+              <Link to={this.state.path}  style={{ textDecoration: 'none',color:"white" }}> 
+              
+              Login - 
+               دخول
+               
+               </Link> 
             
 
          </Typography>

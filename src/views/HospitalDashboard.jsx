@@ -56,6 +56,7 @@ class HospitalDashboard extends Component {
           <Grid item xs={12} md={8}>
             <Typography variant="h4" align="right">
               {" "}
+              Control Room -
               غرفه التحكم
             </Typography>
           </Grid>
@@ -114,6 +115,7 @@ class HospitalDashboard extends Component {
             <Grid item xs={12}>
               <Typography variant="h5" align="right">
                 {" "}
+                Numbers Table - 
                 جدول الاعداد
               </Typography>
             </Grid>
@@ -126,6 +128,7 @@ class HospitalDashboard extends Component {
             <Grid item xs={12}>
               <Typography variant="h5" align="right">
                 {" "}
+                Requests Table - 
                 جدول الطلبات
               </Typography>
             </Grid>

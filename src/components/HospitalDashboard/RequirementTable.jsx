@@ -54,19 +54,26 @@ export default function RequirementTable() {
         <TableHead className={classes.headStyle}>
           <TableRow>
             <TableCell className={classes.textColor} align="right">
+             
+             Avaliable Quantity -
               الاعداد المتاحة{" "}
             </TableCell>
             <TableCell className={classes.textColor} align="right">
+            Requested Quantity -
               الاعداد المطلوبة{" "}
             </TableCell>
             <TableCell className={classes.textColor} align="right">
+            
+            Request - 
               الطلب{" "}
             </TableCell>
             <TableCell className={classes.textColor} align="right">
+             Priority - 
               الضروره{" "}
             </TableCell>
             <TableCell className={classes.textColor} align="right">
               {" "}
+              Date - 
               التاريخ
             </TableCell>
           </TableRow>

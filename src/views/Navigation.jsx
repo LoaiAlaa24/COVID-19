@@ -42,7 +42,7 @@ class Navigation extends Component {
           <Grid item xs={12}>
             <Typography style={{ color: "#6B6667" }} variant="h4" align="right">
               {" "}
-              المستشفى الجوي
+            Airforces Hospital - المستشفى الجوي
             </Typography>
           </Grid>
 
@@ -58,7 +58,10 @@ class Navigation extends Component {
               >
                 <Typography variant="h5" align="center">
                   {" "}
-                  <Link to="/helpRequest"  style={{ textDecoration: 'none',color:"white" }}>      طلب مساعدات</Link> 
+                  <Link to="/helpRequest"  style={{ textDecoration: 'none',color:"white" }}>  
+                  
+                    Request Help -
+                      طلب مساعدات</Link> 
             
 
                 </Typography>
@@ -77,7 +80,10 @@ class Navigation extends Component {
               >
                 <Typography variant="h5" align="center">
                   {" "}
-                  <Link to="/ICU"  style={{ textDecoration: 'none',color:"white" }}>       وحدة العناية المركزة </Link> 
+                  <Link to="/ICU"  style={{ textDecoration: 'none',color:"white" }}>   
+               
+                  Intensive Care Unit - 
+                     وحدة العناية المركزة </Link> 
             
         
                 </Typography>
@@ -96,7 +102,9 @@ class Navigation extends Component {
                 size="large"
               >
                 <Typography variant="h5" align="center">
-                <Link to="/reviseeq"  style={{ textDecoration: 'none',color:"white" }}>   مراجعة اعداد سابقة</Link> 
+                <Link to="/reviseeq"  style={{ textDecoration: 'none',color:"white" }}>  
+                Review Past Statues -
+                 مراجعة اعداد سابقة</Link> 
             
   
                 </Typography>
@@ -114,7 +122,9 @@ class Navigation extends Component {
                 size="large"
               >
                 <Typography variant="h5" align="center">
-                <Link to="/hospitaldashboard"  style={{ textDecoration: 'none',color:"white" }}>             وحدة التحكم</Link> 
+                <Link to="/hospitaldashboard"  style={{ textDecoration: 'none',color:"white" }}>      
+                Control Room - 
+                       وحدة التحكم</Link> 
     
                 </Typography>
               </Button>

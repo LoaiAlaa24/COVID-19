@@ -49,13 +49,28 @@ export default function StatusTable() {
       <Table className={classes.table} size="small" aria-label="a dense table">
         <TableHead className={classes.headStyle}>
           <TableRow>
-          <TableCell  className={classes.textColor} align="right">عدد اجهزة التنفس</TableCell>
-          <TableCell  className={classes.textColor} align="right">عدد السراير المتاحة   </TableCell>
-             <TableCell   className={classes.textColor} align="right">عدد الغرف المتاحة</TableCell>
-            <TableCell  className={classes.textColor} align="right">عدد الغرف المشغولة</TableCell>
-            <TableCell className={classes.textColor} align="right">اعداد المرضى</TableCell>
-            <TableCell   className={classes.textColor} align="right">الوقت</TableCell>
-            <TableCell   className={classes.textColor} align="right" > التاريخ  </TableCell>
+          <TableCell  className={classes.textColor} align="right">
+          Number of ventilators - 
+            عدد اجهزة التنفس</TableCell>
+          <TableCell  className={classes.textColor} align="right">
+            Number of avaliable beds -
+            عدد السراير المتاحة   </TableCell>
+             <TableCell   className={classes.textColor} align="right">
+               Number of avaliable rooms -
+               عدد الغرف المتاحة</TableCell>
+            <TableCell  className={classes.textColor} align="right">
+              Number of busy rooms -
+              عدد الغرف المشغولة</TableCell>
+            <TableCell className={classes.textColor} align="right">
+              Number of patients -
+              اعداد المرضى</TableCell>
+            <TableCell   className={classes.textColor} align="right"
+            >
+              Time - 
+              الوقت</TableCell>
+            <TableCell   className={classes.textColor} align="right" >
+              Date -
+               التاريخ  </TableCell>
           </TableRow>
         </TableHead>
 

@@ -40,6 +40,7 @@ class ReviseEq extends Component {
                 variant="h3"
                 align="right"
               >
+                  Airforces Hospital -
                 المستشفى الجوي
               </Typography>
             </Grid>
@@ -50,6 +51,7 @@ class ReviseEq extends Component {
                 variant="h4"
                 align="right"
               >
+                  Review past statues -
                 مراجعة اعداد سابقة
               </Typography>
             </Grid>

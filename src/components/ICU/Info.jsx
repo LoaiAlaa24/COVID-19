@@ -31,13 +31,13 @@ class Info extends Component {
         >
           <Grid item xs={12}>
             <Typography style={{color:"#6B6667"}} variant="h4" align="right">
-            وحدة العناية المركزة
+          Intensive Care Unit -   وحدة العناية المركزة
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
-             عدد المرضى في الوحدة
+           Number of patients -   عدد المرضى في الوحدة
               </Typography>
             </Grid>
             <Grid item xs={12}>
@@ -53,6 +53,8 @@ class Info extends Component {
           <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
+             
+            Number of busy rooms -
                عدد الغرف المشغولة
               </Typography>
             </Grid>
@@ -69,6 +71,7 @@ class Info extends Component {
           <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
+               Number of avaliable rooms -
               عدد الغرف المتاحة
               </Typography>
             </Grid>
@@ -85,6 +88,8 @@ class Info extends Component {
           <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
+              
+              Number of avaliable beds - 
               عدد السراير المتاحة
               </Typography>
             </Grid>
@@ -101,6 +106,8 @@ class Info extends Component {
           <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
+            
+              Number of ventilators - 
               عدد اجهزة التنفس الصناعي
               </Typography>
             </Grid>
@@ -117,7 +124,7 @@ class Info extends Component {
           <Grid item xs={12} align="center">
             <Grid item xs={4} align="center">
               <Button  onClick={ this.props.handleChangeSwitch }  style={{backgroundColor:"#E20100"}} variant="contained" color="secondary" fullWidth size="large">
-              <Typography variant="h5" align="right"> اكمل</Typography>
+              <Typography variant="h5" align="right"> Continue - اكمل</Typography>
               </Button>
               </Grid>
             </Grid>

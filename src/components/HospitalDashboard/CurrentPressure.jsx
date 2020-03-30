@@ -38,7 +38,7 @@ class CurrentPressure extends Component {
         >
           <Grid item xs={12} className={classes.headerBackground}>
             <Typography variant="h6" align="right" className={classes.textColor}>
-            الضغط الحالي
+          Current Pressure -   الضغط الحالي
             </Typography>
           </Grid>
           <Grid item xs={6}>

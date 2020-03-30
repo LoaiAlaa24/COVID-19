@@ -32,13 +32,17 @@ class Info extends Component {
         >
           <Grid item xs={12}>
             <Typography style={{color:"#6B6667"}} variant="h4" align="right">
+            
+            Request Help - 
              طلب مساعدات
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
-                نوع ( اقنعة / ادوية ) 
+               
+               Type(masks/ medicine)
+                -   نوع ( اقنعة / ادوية ) 
               </Typography>
             </Grid>
             <Grid item xs={12}>
@@ -54,6 +58,8 @@ class Info extends Component {
           <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
+              
+              Requested Quantity -
                عدد مطلوب
               </Typography>
             </Grid>
@@ -70,6 +76,7 @@ class Info extends Component {
           <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
+            Avaliable Quantity -
                عدد متاح حاليا
               </Typography>
             </Grid>
@@ -86,6 +93,8 @@ class Info extends Component {
           <Grid item xs={12} md={4}>
             <Grid item xs={12}>
               <Typography style={{color:"#6B6667"}}  variant="h5" align="right">
+       
+       Priority - 
           ضرورة
               </Typography>
             </Grid>
@@ -102,7 +111,7 @@ class Info extends Component {
           <Grid item xs={12} align="center">
             <Grid item xs={4} align="center">
               <Button onClick={ this.props.handleChangeSwitch }  style={{backgroundColor:"#E20100"}} variant="contained" color="secondary" fullWidth size="large">
-              <Typography variant="h5" align="right"> ارسال</Typography>
+              <Typography variant="h5" align="right"> Send -  ارسال</Typography>
               </Button>
               </Grid>
             </Grid>

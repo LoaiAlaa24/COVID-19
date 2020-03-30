@@ -46,7 +46,7 @@ class Requirements extends Component {
               align="right"
               className={classes.textColor}
             >
-                {"اخر طلب ( "+ new Date(Date.now()).toLocaleDateString("ar-EG", timeOption)+" )"}
+                {" Last request - اخر طلب ( "+ new Date(Date.now()).toLocaleDateString("ar-EG", timeOption)+" )"}
             </Typography>
           </Grid>
           <Grid item xs={9}>

@@ -38,7 +38,7 @@ class AvailableBedsGraph extends Component {
               variant="h6"
               align="right"
               className={classes.textColor}
-            >
+            > Total Numbers of Beds - 
               اجمالى عدد السراير المتاحة
             </Typography>
           </Grid>

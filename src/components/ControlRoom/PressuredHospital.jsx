@@ -37,7 +37,7 @@ class PressuredHospital extends Component {
         >
           <Grid item xs={12} className={classes.headerBackground}>
             <Typography variant="h6" align="right" className={classes.textColor}>
-              المستشفى بأعلى ضغط
+           Highly Pressured Hospitals -   المستشفى بأعلى ضغط
             </Typography>
           </Grid>
           <Grid item xs={3}>
